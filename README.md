@@ -15,7 +15,7 @@ This app is interactive, powered by Streamlit, and generates statistical summari
 ## Quick Start
 1. Clone the repo  
 2. Install dependencies  
-3. Create `.streamlit/secrets.toml` (using the template below)  
+3. Create `.streamlit/secrets.toml`  
 4. Run: `streamlit run code.py`  
 5. Upload your Excel/CSV files in the sidebar
 
