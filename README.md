@@ -12,6 +12,15 @@ This app is interactive, powered by Streamlit, and generates statistical summari
 
 ---
 
+## Quick Start
+1. Clone the repo  
+2. Install dependencies  
+3. Create `.streamlit/secrets.toml` (using the template below)  
+4. Run: `streamlit run code.py`  
+5. Upload your Excel/CSV files in the sidebar
+
+---
+
 ## Features
 
 ### 1. Data Loading & Cleaning
@@ -72,12 +81,12 @@ pip install pandas numpy matplotlib seaborn plotly streamlit scikit-learn openpy
 
 3. Authentication:
 
-To export reports, a Google authentification in set up.
-<br>**Wether the auth succeeds or not you will be considered as authenticated, so this part will not block you if you don't want to set up the API**
+To export reports, a Google authentication is set up.
+<br>**Whether the authentication succeeds or not, you will be considered authenticated, so this part will not block you if you don't want to set up the API**
 <br>
-The authentification relies on a client_id and client_secret stored in <br>`multi-track-data-reporter/.streamlit/secrets.toml`
+The authentication relies on a client_id and client_secret stored in <br>`multi-track-data-reporter/.streamlit/secrets.toml`
 <br>
-To execute this code localy, create this file and use this template :
+To execute this code locally, create this file and use this template:
 ```
 oauth_redirect_uri = "http://localhost:8501/"
 
@@ -85,7 +94,7 @@ oauth_redirect_uri = "http://localhost:8501/"
 client_id = "client_id_mock_001.apps.googleusercontent.com"
 client_secret = "client_secret_mock_ABCDEF123456"
 ```
-If you wish to test a real version, you will need to create your own app on Google Cloud and set up your own API and keys.
+If you wish to test a real version, you will need to create your own Google Cloud app and set up your own API and keys.
 
 
 ## Usage
